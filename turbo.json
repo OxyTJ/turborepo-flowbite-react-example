@@ -1,0 +1,20 @@
+{
+  "pipeline": {
+    "dev": {
+      "cache": false
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".dist/**"]
+    },
+    "lint": {
+      "outputs": []
+    },
+    "storybook": {
+      "cache": false
+    },
+    "build-storybook": {
+      "outputs": ["storybook-static/**"]
+    }
+  }
+}
